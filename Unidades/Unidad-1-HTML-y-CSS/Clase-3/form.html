@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>iniciar sesión</h1>
+
+    <form action="">
+        <!-- NOMBRE DE USUARIO -->
+        <div>
+            <label for="username">Escribe el nombre de ususario</label>
+            <input type="text" id="username" required>
+        </div>
+
+        <!-- CONTRASEÑA -->
+        <div>
+            <label for="password">Escribe la contraseña:</label>
+            <input type="password" id="password" required minlength="8" maxlength="12">
+            <!-- El "required" obliga al usuario a completar el form -->
+            <!-- El "minlength" obliga al usuario a completar el form con al menos "X" caracteres -->
+            <!-- El "maxlength" obliga al usuario a completar el form con no mas de "X" caracteres -->
+            <button type="button">Mostrar</button>
+        </div>
+
+        <div>
+            <label for="region">Selecciona una region</label>
+            <Select id="region">
+                <option value="SA" selected>Sudamerica</option>
+                <option value="NA" disabled>Norteamerica</option>
+                <option value="EU">Europa</option>
+                <option value="AS">Asia</option>
+                <!-- En "VALUE" se escribe lo que se va a guardar en la base de datos -->
+            </Select>
+        </div>
+
+        <div>
+            <label for="welcome_message">Escribe un mensaje de bievenida</label>
+            <textarea name="" id="welcome_message" rows="5" cols="10" required maxlength="100"
+                placeholder="que onda"></textarea>
+        </div>
+
+        <!-- BOTON DE ENVIAR, cuando un boton esta dentro de un form, el navegador por 
+        defecto interpreta que es un boton de enviar-->
+        <button type="submit">ENVIAR</button>
+    </form>
+
+    <!-- TAREA -->
+<div>
+    <a href="./Tarea/tarea.html">Tarea</a>
+</div>
+    
+</body>
+
+</html>
