@@ -3,7 +3,7 @@
 
 /* normalizacion */
 *{
-    /* Ahora el ancho y el alto determinaran el tamaño de la caja de borde Y NO LA DE CONTENIDO */
+    /* Ahora el ancho y el alto MAXIMO lo determinaran el tamaño de la caja de borde Y NO LA DE CONTENIDO */ /* VOY A USAR ESTE */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@ body{
     border: 0px blue solid;
     border-right: 0px yellow dotted;
     border-radius: 10px;
-    padding-left: 10px;
+    padding: 5px 10px 0px 10px;
     border-bottom: 1px;
     margin-bottom: 20px;
     /* x, y, blur/difuminado, spread, color */
@@ -29,14 +29,18 @@ body{
     200px 0px 10px 0px rgb(255, 0, 0)
     ;
     font-family: "Poppins", sans-serif;
+
     /* Maneja que tan pesada se vera la fuente (que tan negrita) */
-    font-weight: 700;
+    font-weight: 500;
+
     /* Tamaño de fuente */
-    font-size: 28px;
+    font-size: 15px;
+
     /* Espaciado entre palabras */ 
     word-spacing: 10px;
+
     /* Espaciado entre letas */
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 
     /* Por defecto box-sizing es content box */
     /* box-sizing: content-box; */
@@ -61,20 +65,26 @@ body{
 .parrafo{
     text-align: justify;
     /* width: 300px; */
-    /* height: 300px; */
+    height: fit-content;
 }
 
 
 span{
     width: 200px;
     height: 200px;
-    background-color: red;
+    background-color: rgb(37, 34, 223);
+
 }
 
 .caja-2{
     width: 200px;
     height: 200px;
     display: block;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    background-color: brown;
 }
 
 /* 
@@ -120,6 +130,8 @@ inline-block:
         -<img/>
         -<video>
         -<iframe>
+
+        De todos modos se puede cambiar el display de cualquier etiqueta con la propiedad display 
 */
 
 h1{
