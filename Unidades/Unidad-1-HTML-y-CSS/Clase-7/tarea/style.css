@@ -16,7 +16,7 @@ body {
 
 .migration-section {
     width: 100%;
-    height: 50%;
+    height: 80%;
     background-color: #1f1346;
     display: flex;
     flex-direction: column;
@@ -24,7 +24,7 @@ body {
     align-items: center;
     /* padding: 0 450px; */
     /* consultar  */
-    gap: 30px;
+    /* gap: 100px; */
     padding-bottom: 50px;
 }
 
@@ -39,32 +39,26 @@ body {
 .migration-header {
     display: flex;
     flex-direction: column;
-
-
     padding-top: 60px;
     align-items: center;
     gap: 35px;
-
 }
 
 .migration-title {
     font-size: 30px;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
-
-
 }
 
 .migration-description {
     text-align: center;
     line-height: 1.5;
-
 }
 
 .migration-card-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     gap: 25px;
 }
 
@@ -77,7 +71,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-
 }
 
 .migration-card-icon {
@@ -88,10 +81,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.migration-card-icon{
+.migration-card-icon {
     svg{
         width: 70%;
         height: 70%;
@@ -99,9 +91,8 @@ body {
 }
 
 .migration-card-subtitle {
-    font-weight: bold;
+    font-weight: bold;   /* En negrita */
     font-size: 18px;
-
 }
 
 .migration-card-description {
@@ -110,14 +101,12 @@ body {
 }
 
 .migration-button {
-
-    background-color: #673de6;
+    background-color: #673de6;  /* El fondo del boton */
     padding: 15px 40px 15px 40px;   /* Al sentido de las agujas */
     border-radius: 8px;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-
+    color: white;    /* El color de la letra */
+    font-weight: bold;   /* En negrita */
+    font-size: 16px;    /* Tama */
 }
 
 .migration-button:hover {
